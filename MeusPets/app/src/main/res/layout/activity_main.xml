@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/pet"
+        >
+
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:textColor="@color/black"
+            android:layout_width="210dp"
+            android:layout_height="34dp"
+            android:text="Meus Pets"
+            android:textAlignment="center"
+            android:layout_marginBottom="350dp"
+            android:textSize="25dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="97dp"
+            tools:layout_editor_absoluteY="102dp" />
+
+        <Button
+        android:id="@+id/btn_go_to_second_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Go to Second Activity"
+        tools:layout_editor_absoluteX="86dp"
+        tools:layout_editor_absoluteY="584dp"
+        tools:ignore="MissingConstraints" />
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

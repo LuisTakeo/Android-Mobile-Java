@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="733dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/pet"
+        tools:layout_editor_absoluteY="-2dp">
+
+        <TextView
+            android:id="@+id/textViewNome"
+            android:layout_width="147dp"
+            android:layout_height="33dp"
+
+            android:text="Nome:"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="150dp" />
+
+
+        <EditText
+            android:id="@+id/petNome"
+            android:layout_width="237dp"
+            android:layout_height="wrap_content"
+            android:ems="1"
+            android:inputType="text"
+            android:text=""
+            tools:layout_editor_absoluteX="163dp"
+            tools:layout_editor_absoluteY="150dp" />
+        <TextView
+            android:id="@+id/textViewIdade"
+            android:layout_width="58dp"
+            android:layout_height="32dp"
+            android:text="Idade:"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="22dp"
+            tools:layout_editor_absoluteY="295dp" />
+
+        <EditText
+            android:id="@+id/petIdade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text=""
+            tools:layout_editor_absoluteX="163dp"
+            tools:layout_editor_absoluteY="295dp" />
+
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
