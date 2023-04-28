@@ -5,63 +5,67 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/teal_200">
 
-    <LinearLayout
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#3F51B5"
+        android:padding="20dp"
+        android:text="AGENDA"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#D5FFEB3B"
+
+        android:textColorHighlight="@color/black"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center|center_horizontal|center_vertical"
+
+
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#838EE7F3"
+        app:layout_constraintBottom_toTopOf="@+id/titulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/kuwabara" />
+
+    <Button
+        android:id="@+id/cadastro"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#FFFFFF"
-        android:orientation="vertical"
-        tools:context=".MainActivity">
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
 
-
-        <TextView
-            android:id="@+id/titulo"
-            android:layout_width="fill_parent"
-            android:layout_height="94dp"
-            android:layout_gravity="center"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:background="#3F51B5"
-            android:padding="20dp"
-            android:text="AGENDA"
-            android:textAlignment="center"
-            android:textColor="#D5FFEB3B"
-            android:textColorHighlight="@color/black"
-            android:textSize="32sp"
-            android:textStyle="bold"
-            android:typeface="sans"
-
-            />
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="match_parent"
-            android:layout_height="500dp"
-            android:layout_gravity="center|center_horizontal|center_vertical"
-            android:background="#838EE7F3"
-            app:srcCompat="@drawable/kuwabara"
-
-
-            />
-
-        <Button
-            android:id="@+id/cadastro"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/teal_200"
-            android:layout_marginTop="5dp"
-            android:padding="15dp"
-            android:text="Cadastro"
-
-            />
-
-
-    </LinearLayout>
-
-
-
-
-
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/teal_200"
+        android:padding="15dp"
+        android:text="Cadastro"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

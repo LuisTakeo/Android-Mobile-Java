@@ -4,47 +4,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:background="@drawable/pet"
-        >
+    tools:context=".MainActivity"
+    android:background="@drawable/pet">
 
 
         <TextView
             android:id="@+id/textViewTitle"
-            android:textColor="@color/black"
-            android:layout_width="210dp"
-            android:layout_height="34dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="16dp"
             android:text="Meus Pets"
             android:textAlignment="center"
-            android:layout_marginBottom="350dp"
+            android:textColor="@color/black"
             android:textSize="25dp"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="97dp"
-            tools:layout_editor_absoluteY="102dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.567"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
 
         <Button
-        android:id="@+id/btn_go_to_second_activity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Go to Second Activity"
-        tools:layout_editor_absoluteX="86dp"
-        tools:layout_editor_absoluteY="584dp"
-        tools:ignore="MissingConstraints" />
-
-
-
-
-
-
-    </LinearLayout>
+            android:id="@+id/btn_go_to_second_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="32dp"
+            android:text="Continuar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
+            app:layout_constraintVertical_bias="0.947"
+            tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

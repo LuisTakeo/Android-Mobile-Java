@@ -4,61 +4,156 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity2">
-
-    <LinearLayout
-        android:layout_width="411dp"
-        android:layout_height="733dp"
-        android:orientation="vertical"
-        android:gravity="center_horizontal"
-        android:background="@drawable/pet"
-        tools:layout_editor_absoluteY="-2dp">
-
-        <TextView
-            android:id="@+id/textViewNome"
-            android:layout_width="147dp"
-            android:layout_height="33dp"
-
-            android:text="Nome:"
-            android:textAlignment="center"
-            android:textSize="20dp"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="150dp" />
+    tools:context=".MainActivity2"
+    android:background="@drawable/pet">
 
 
-        <EditText
-            android:id="@+id/petNome"
-            android:layout_width="237dp"
-            android:layout_height="wrap_content"
-            android:ems="1"
-            android:inputType="text"
-            android:text=""
-            tools:layout_editor_absoluteX="163dp"
-            tools:layout_editor_absoluteY="150dp" />
-        <TextView
-            android:id="@+id/textViewIdade"
-            android:layout_width="58dp"
-            android:layout_height="32dp"
-            android:text="Idade:"
-            android:textAlignment="center"
-            android:textSize="20dp"
-            tools:layout_editor_absoluteX="22dp"
-            tools:layout_editor_absoluteY="295dp" />
+    <TextView
+        android:id="@+id/textViewNome"
+        android:layout_width="147dp"
+        android:layout_height="30dp"
 
-        <EditText
-            android:id="@+id/petIdade"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="text"
-            android:text=""
-            tools:layout_editor_absoluteX="163dp"
-            tools:layout_editor_absoluteY="295dp" />
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="72dp"
+        android:text="Nome:"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <EditText
+        android:id="@+id/petNome"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="16dp"
+        android:ems="1"
+        android:inputType="text"
+        android:text=""
+        android:textSize="26dp"
+        android:textAlignment="center"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewNome"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/textViewTipoAnimal"
+        android:layout_width="147dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:text="Tipo:"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNome" />
 
-    </LinearLayout>
+    <EditText
+        android:id="@+id/petTipoAnimal"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="1"
+        android:inputType="text"
+        android:text=""
+        android:textSize="26dp"
+        android:textAlignment="center"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.346"
+        app:layout_constraintStart_toEndOf="@+id/textViewTipoAnimal"
+        app:layout_constraintTop_toBottomOf="@+id/petNome" />
 
+    <TextView
+        android:id="@+id/textViewRaca"
+        android:layout_width="147dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:text="Raça:"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTipoAnimal" />
+
+    <EditText
+        android:id="@+id/petRaca"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text=""
+        android:textSize="26dp"
+        android:textAlignment="center"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewRaca"
+        app:layout_constraintTop_toBottomOf="@+id/petTipoAnimal" />
+
+    <TextView
+        android:id="@+id/textViewCor"
+        android:layout_width="147dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:text="Cor:"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRaca" />
+
+    <EditText
+        android:id="@+id/petCor"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text=""
+        android:textSize="26dp"
+        android:textAlignment="center"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewCor"
+        app:layout_constraintTop_toBottomOf="@+id/petRaca" />
+
+    <TextView
+        android:id="@+id/textViewData"
+        android:layout_width="147dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:text="Data:"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCor" />
+
+    <EditText
+        android:id="@+id/petData"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text=""
+        android:textSize="26dp"
+        android:textAlignment="center"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewData"
+        app:layout_constraintTop_toBottomOf="@+id/petCor" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
