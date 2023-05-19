@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgfoto"
+            android:layout_width="300dp"
+            android:layout_height="325dp"
+            android:src="@drawable/calcifer" />
+
+        <TextView
+            android:id="@+id/txtinformacao"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:paddingLeft="10dp"
+            android:text="Foto1"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btfoto1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="36dp"
+        android:text="Exibir foto1" />
+
+    <Button
+        android:id="@+id/btfoto2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btfoto1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="22dp"
+        android:text="Exibir foto 2" />
+
+</RelativeLayout>
