@@ -10,26 +10,30 @@ public class Pet {
     private int mesNascimento;
     private int diaNascimento;
 
-    public Pet(int idPet, String nomePet, String tipoAnimal, String raca, String cor, int anoNascimento, int mesNascimento, int diaNascimento) {
+
+
+    public Pet(int idPet, String nomePet, String tipoAnimal, String raca, String cor) {
         this.idPet = idPet;
         this.nomePet = nomePet;
         this.tipoAnimal = tipoAnimal;
         this.raca = raca;
         this.cor = cor;
-        this.anoNascimento = anoNascimento;
-        this.mesNascimento = mesNascimento;
-        this.diaNascimento = diaNascimento;
+
     }
 
-    public Pet(String nomePet, String tipoAnimal, String raca, String cor, int anoNascimento, int mesNascimento, int diaNascimento) {
+    public Pet(String nomePet, String tipoAnimal, String raca, String cor) {
         this.nomePet = nomePet;
         this.tipoAnimal = tipoAnimal;
         this.raca = raca;
         this.cor = cor;
-        this.anoNascimento = anoNascimento;
-        this.mesNascimento = mesNascimento;
-        this.diaNascimento = diaNascimento;
+
     }
+
+    public Pet(){
+
+    }
+
+
 
 
 

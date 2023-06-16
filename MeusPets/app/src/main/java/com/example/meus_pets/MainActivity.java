@@ -19,10 +19,14 @@ public class MainActivity extends AppCompatActivity {
         btnGoToSecondActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
-                startActivity(intent);
+                segundaTela();
             }
         });
 
+    }
+
+    private void segundaTela(){
+        Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+        startActivity(intent);
     }
 }

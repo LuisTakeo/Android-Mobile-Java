@@ -9,34 +9,57 @@
 
 
     <TextView
+        android:id="@+id/CADASTRO"
+        android:layout_width="134dp"
+        android:layout_height="27dp"
+        android:text="Cadastro"
+        android:textAlignment="center"
+        android:textColor="#FF5722"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txtCodigo"
+        android:layout_width="196dp"
+        android:layout_height="39dp"
+        android:hint="Código"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/petNome"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="186dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
         android:id="@+id/textViewNome"
         android:layout_width="147dp"
         android:layout_height="30dp"
 
         android:layout_marginStart="16dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="28dp"
         android:text="Nome:"
         android:textAlignment="center"
         android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/CADASTRO" />
 
     <EditText
         android:id="@+id/petNome"
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="60dp"
         android:layout_marginEnd="16dp"
+        android:background="@color/white"
         android:ems="1"
         android:inputType="text"
         android:text=""
-        android:textSize="26dp"
         android:textAlignment="center"
-        android:background="@color/white"
+        android:textSize="26dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textViewNome"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteY="60dp" />
 
     <TextView
         android:id="@+id/textViewTipoAnimal"
@@ -126,34 +149,46 @@
         app:layout_constraintStart_toEndOf="@+id/textViewCor"
         app:layout_constraintTop_toBottomOf="@+id/petRaca" />
 
-    <TextView
-        android:id="@+id/textViewData"
-        android:layout_width="147dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="16dp"
+    <Button
+        android:id="@+id/btnLimpar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="36dp"
-        android:text="Data:"
-        android:textAlignment="center"
-        android:textSize="20dp"
+        android:text="Limpar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewCor" />
 
-    <EditText
-        android:id="@+id/petData"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text=""
-        android:textSize="26dp"
-        android:textAlignment="center"
-        android:background="@color/white"
+    <Button
+        android:id="@+id/btnSalvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:text="Salvar"
+        app:layout_constraintStart_toEndOf="@+id/btnLimpar"
+        tools:layout_editor_absoluteY="337dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnExcluir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="Excluir"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textViewData"
-        app:layout_constraintTop_toBottomOf="@+id/petCor" />
+        app:layout_constraintHorizontal_bias="0.309"
+        app:layout_constraintStart_toEndOf="@+id/btnSalvar"
+        tools:layout_editor_absoluteY="337dp"
+        tools:ignore="MissingConstraints" />
+
+    <ListView
+        android:id="@+id/listViewPet"
+        android:layout_width="409dp"
+        android:layout_height="338dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSalvar"
+        tools:layout_editor_absoluteX="1dp"
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
